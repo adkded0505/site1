@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <title>eun young site1</title>
     <style>
-        body > img {
+        body > h1 {
+            background-color:black;
+            color:blueviolet;
+            display:inline-block;
+            position:absolute;
+            top:0;
+            left:50%;
+            transform:translateX(-50%);
+            transition:color 1s;
+        }
+        
+        body > div > img {
             width:500px;
             height:600px;
+            position:absolute;
+            top:15%;
+            left:50%;
+            transform:translateX(-55%);
         }
+        
+        body > h1:hover {
+            color:gold;
+        }
+        
+        
     </style>
 </head>
 <body>
     <h1>EY's First Site</h1>
-    <img src="img/pooh.jpg" alt="pooh">
+    <div><img src="img/pooh.jpg" alt="pooh"></div>
 </body>
 </html>
