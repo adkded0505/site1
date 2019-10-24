@@ -4,18 +4,37 @@
     <meta charset="UTF-8">
     <title>eun young site1</title>
     <style>
-        body > h1 {
-            background-color:black;
-            color:blueviolet;
-            display:inline-block;
-            position:absolute;
-            top:0;
-            left:50%;
-            transform:translateX(-50%);
-            transition:color 1s;
+        
+        body {
+            padding:0;
+            margin:0;
+            list-style:none;
         }
         
-        body > div > img {
+        a {
+            text-decoration:none;
+            color:inherit;
+        }
+        
+        body > .site-name {
+            background-color:black;
+            display:inline-block;
+            border-radius:30px;
+            position:absolute;
+            top:5%;
+            left:50%;
+            transform:translateX(-50%);
+            transition:color .5s;
+        }
+        
+        body > .site-name > a {
+            color:white;
+            font-size:2rem;
+            display:block;
+            padding:10px 70px;
+        }
+        
+        body > .image > img {
             width:500px;
             height:600px;
             position:absolute;
@@ -24,15 +43,14 @@
             transform:translateX(-55%);
         }
         
-        body > h1:hover {
+        body > .site-name > a:hover {
             color:gold;
         }
-        
         
     </style>
 </head>
 <body>
-    <h1>EY's First Site</h1>
-    <div><img src="img/pooh.jpg" alt="pooh"></div>
+    <div class="site-name"><a href="index.html">EY's First Site</a></div>
+    <div class="image"><img src="img/pooh.jpg" alt="pooh"></div>
 </body>
 </html>
